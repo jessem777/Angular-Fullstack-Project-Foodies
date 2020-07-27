@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
+mat-card{
+  margin: auto;
+  width: fit-content;
+}
+
+.contain{
+    width: fit-content;
+    
+    padding-top: 10%;
+    padding-left: 5%;
+}
+.title{
+    font-size: 5rem;
+    color: rgb(247, 245, 245);
+    font-family: 'Kaushan Script', cursive;
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 15px;
+    padding-left: 30px;
+  }
+ 
+ul {
+   height: auto;
+   width: fit-content;
+   cursor: pointer;
+}
+li { 
+    background-color: #f1f1f1; 
+    margin-bottom:5px; 
+    font-size: 20px;  
+    color:#333; 
+    padding:5px 15px; 
+    display: block;
+    z-index: inherit
+    }
+ li:hover {
+        background-color:#007EDB; 
+        color:#fff;
+        text-decoration: none;
+    }
+   li:active{
+        background-color:rgba(0, 128, 219, 0.81); 
+        color: rgb(255, 254, 254);
+        border-width: 1000px
+    } 
+    li.active {
+        background-color: #007EDB
+    }
+
+
+.underlay-photo {
+    background: url('http://spice4life.co.za/wp-content/uploads/2016/09/hygienic-cooking.jpg');
+    background-size: cover;
+    z-index: -2;
+  }
+  .underlay-black {
+    background: rgba(116, 116, 116, 0.7);
+    z-index: -2;
+  }
+  [class*=underlay] {
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: fixed;
+    top: 0;
+  }
+
+
+
+
+
+
+
+
+
+
+
+

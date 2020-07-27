@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,700);
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Pacifico&display=swap);
+
+body, html {
+  height: 100%;
+}
+h2{
+  color: white;
+  text-align: left;
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  padding-left: 7%;
+}
+.title, .noRes{
+
+    color: rgb(0, 0, 0);
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 3em;
+    padding-left: 7%;
+
+}
+
+.noPost{ 
+  color: white;
+  font-size: 20px;
+}
+
+.res-list{
+  color: rgb(0, 0, 0);
+  font-size: 2em;
+}
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 100;
+  display: flex;
+  overflow: hidden;
+}
+input {
+  ::-webkit-input-placeholder {
+     color: rgba(100, 12, 12, 0.7);
+  }
+  ::-moz-placeholder {
+     color: rgba(255,255,255,0.7);
+  }
+  :-ms-input-placeholder {
+     color: rgba(182, 0, 0, 0.7);
+  }
+  &:focus {
+    outline: 0 transparent solid;
+    ::-webkit-input-placeholder {
+     color: rgba(0,0,0,0.7);
+    }
+    ::-moz-placeholder {
+       color: rgba(0,0,0,0.7);
+    }
+    :-ms-input-placeholder {
+       color: rgba(0,0,0,0.7);
+    }
+  }
+}
+
+img { 
+  width: 40%;
+  height: 200px; 
+  border-radius: 25px;
+  box-shadow: 0 16px 20px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+} 
+
+
+
+
+    .create {
+  border: 1px solid white;
+  background: transparent;
+  color: white;
+  display: block;
+  margin: 1rem auto;
+  min-width: 1px;
+  padding: .25rem;
+  &:hover, &:focus {
+    background: white;
+    color: black;
+
+  }
+}

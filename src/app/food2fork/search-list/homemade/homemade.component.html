@@ -1,0 +1,15 @@
+<h3>Homemade Recipes</h3>
+            <div class="row">
+                <div class="row__inner">
+                    <div class="tile" *ngFor="let homemadeRecipe of homemadeRecipes" [routerLink]="['/recipe', homemadeRecipe.id]">
+                        <div class="tile__media">
+                        <img class="tile__img" [src]="homemadeRecipe.image" />
+                        </div>
+                        <div class="tile__details">
+                        <div class="tile__title" placeholder="homemadeRecipe.title">
+                            {{homemadeRecipe.title}}
+                        </div>
+                        </div>
+                    </div>
+                </div>
+              </div>

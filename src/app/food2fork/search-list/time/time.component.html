@@ -1,0 +1,15 @@
+<h3>15 Minutes or Less</h3>
+        <div class="row">
+            <div class="row__inner">
+                <div class="tile" *ngFor="let timeRecipe of timeRecipes" [routerLink]="['/recipe', timeRecipe.id]">
+                    <div class="tile__media">
+                    <img class="tile__img" [src]="timeRecipe.image" />
+                    </div>
+                    <div class="tile__details">
+                    <div class="tile__title" placeholder="timeRecipe.title">
+                        {{timeRecipe.title}}
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>

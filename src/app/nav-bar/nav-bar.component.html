@@ -1,0 +1,25 @@
+<head>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous">    
+</head>  
+  
+  <body>
+  
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="collapse navbar-collapse" id="navbar-collapse-main">
+                <div>
+                    <button class="foodies" routerLink="/" >Foodies</button>
+                    <button class="login" routerLink="/login" *ngIf="!userIsAuthenticated">Login</button>
+                    <button class="signup" routerLink="/signup" *ngIf="!userIsAuthenticated">SignUp</button>
+                      <div id="profile" class="dropdown" *ngIf="userIsAuthenticated">
+                          <button class="dropbtn" routerLink="/user">Profile</button>
+                            <div class="dropdown-content">
+                                <a routerLink="/userRecipes">Create Recipies</a>
+                                <a routerLink="/user">My Account</a>
+                              <a (click)="onLogout()">Sign Out</a>
+                            </div>
+                      </div>
+                  </div>  
+            </div>
+</nav> 

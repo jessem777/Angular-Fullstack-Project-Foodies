@@ -1,0 +1,22 @@
+<br>
+<br>
+<br>
+<br>
+       <div class="container">
+            <div class="row">
+                <div class="col-md-4" *ngFor="let recipe of recipes">
+                    <div class="blog-box"  >
+                        <img [src]="recipe.image" alt="blog1" />
+                        <h3>{{ recipe.title }}</h3>
+                        <p>by <span>{{ recipe.publisher }}</span></p>
+                        <a [routerLink]="['/recipe', recipe.id]"   class="btn btn-default">Read more...</a>
+                </div>
+            </div>
+        </div>  
+        <app-event></app-event>
+        <app-homemade></app-homemade>
+        <app-rank></app-rank>
+        <app-time></app-time>
+          
+             
+                      

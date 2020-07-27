@@ -1,0 +1,27 @@
+    
+<div class="underlay-photo" >
+    <div class="underlay-black">
+      </div> 
+</div>
+<div id="title">
+        <div class="landing-text">
+            <h2>{{ title }}</h2>
+        </div>
+</div>
+<app-title></app-title> 
+<br>
+<br>
+<div class="search">
+    <form>
+        <input [(ngModel)]="query" name="search" type="text"  class="search-field" placeholder="    Search on Foodies!">
+        <button (click)="onClickApi(query)" class="searchBtn">Search</button>
+    </form>
+</div> 
+<app-search-list></app-search-list>
+   
+   
+
+
+
+
+

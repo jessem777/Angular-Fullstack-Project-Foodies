@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="blog-box" >
+          <a > <img [src]="idRecipes.image_url"/> </a>
+          <h1>{{idRecipes.title}}</h1>
+            <button class="button button-like" *ngIf="userIsAuthenticated">
+              <i class="fa fa-heart"></i>
+              <span>Like</span>
+            </button>
+           <p>Directions by <span><a href="{{idRecipes.source_url}}"><p>{{idRecipes.publisher}}</p></a></span></p>
+           <div class="table">
+           <h1>Ingredients</h1>
+            <ol >
+                <li *ngFor="let ingredient of ingredients">{{ ingredient }}</li>
+            </ol>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="webContainer">
+    <p class="webTitle">Directions Here:</p>
+    <iframe class="webDirections"  [src]="recipeUrl | safe"></iframe> 
+  </div>
+ 
+    
+
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>

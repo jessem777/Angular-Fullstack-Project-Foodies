@@ -1,0 +1,23 @@
+
+<div class="container">
+         <h2>User Login</h2>
+        <br>
+        <br>
+        <form class="login-form"  #loginForm="ngForm" >
+                <p class="login-text">
+                  <span class="fa-stack fa-lg">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-lock fa-stack-1x"></i>
+                  </span>
+                </p>
+                <input  name="email" ngModel type="email" class="login-username" autofocus="true" required email placeholder="Email" #emailInput="ngModel" />
+                <input name="password" ngModel type="password" class="login-password" placeholder="Password" #passwordInput="ngModel" />
+                <input (click)="onLogin(loginForm)" type="submit" name="Login" value="Login" class="login-submit" />
+                <input routerLink="/signup" type="submit" name="SignUp" class="login-submit" value ="Sign Up"/>
+        </form>
+</div>
+
+
+
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div>

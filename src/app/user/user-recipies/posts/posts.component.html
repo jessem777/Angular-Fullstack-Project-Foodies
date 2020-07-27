@@ -1,0 +1,19 @@
+<form multi="true" *ngFor= "let recipe of recipes">
+    <mat-accordion multi="true" *ngIf="recipes.length > 0">
+      <mat-expansion-panel >
+      <div class="recipe-image">
+        <img [src]=getSantizeUrl(recipe.imagePath) [alt]="recipe.title">
+      </div>
+        <mat-expansion-panel-header class="title">
+          {{ recipe.title }}
+        </mat-expansion-panel-header>
+        <p class="res-list">{{ recipe.ingredients }}</p>
+        <mat-action-row 
+        *ngIf="userIsAuthenticated && userId == recipe.creator">
+          <button [routerLink]="['/edit', recipe.id]" >EDIT</button>
+          <button (click)="onDelete(recipe.id)">DELETE</button>
+        </mat-action-row>
+      </mat-expansion-panel>
+    </mat-accordion>
+    <p class="noPost" *ngIf="recipes.length <= 0">No posts added yet!</p>
+  </form>

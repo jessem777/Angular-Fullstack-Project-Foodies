@@ -1,0 +1,18 @@
+<div class="container">
+    <h2>Foodies Sign-up</h2>
+    <br>
+    <br><p class="login-text">
+      <span class="fa-stack fa-lg">
+        <i class="fa fa-circle fa-stack-2x"></i>
+        <i class="fa fa-lock fa-stack-1x"></i>
+      </span>
+    </p>
+    <form  class="login-form" #signUpForm="ngForm">
+        <input name="email" ngModel type="email" class="signup-email" autofocus="true" require email placeholder="Email" #emailInput="ngModel"/>
+        <input name="password" ngModel type="password" type="password" class="signup-password" placeholder="Password" #passwordInput="ngModel" />
+        <button  (click)="onSignUp(signUpForm)" type="submit" class="login-submit" >Create Account</button>
+      </form>
+</div>
+
+  <div class="underlay-photo"></div>
+  <div class="underlay-black"></div>
